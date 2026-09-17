@@ -1,0 +1,20 @@
+---
+title: "Teaching"
+pagetitle: "Teaching — Jacob Murri"
+---
+
+<!--
+  Fill this in with the courses you have taught or assisted. Suggested format:
+
+  ## UCLA
+
+  ::: {.entry}
+  [Math 33B — Differential Equations]{.entry-title}
+  [Teaching assistant, Spring 2026]{.entry-meta}
+  :::
+
+  If you would rather not have this page at all, delete teaching.qmd and remove
+  the Teaching link from _masthead.html.
+-->
+
+Courses and teaching experience will be listed here.

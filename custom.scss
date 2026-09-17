@@ -1,0 +1,208 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Newsreader", Georgia, "Times New Roman", serif;
+$font-size-root: 17px;
+$body-bg: #f2f3f0;
+$body-color: #16211e;
+$link-color: #1b5a6b;
+$headings-font-weight: 500;
+$toc-font-size: 0.85rem;
+
+/*-- scss:rules --*/
+
+:root {
+  --paper: #f2f3f0;
+  --ink: #16211e;
+  --muted: #5d6a65;
+  --petrol: #1b5a6b;
+  --madder: #9a3b2e;
+  --rule: #d2d8d3;
+  --sans: "Public Sans", system-ui, sans-serif;
+  --measure: 33rem;   /* the reading column: roughly 66 characters */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #12191a;
+    --ink: #e4e8e4;
+    --muted: #97a29d;
+    --petrol: #7fc0ce;
+    --madder: #d98a7c;
+    --rule: #2b3736;
+  }
+  body { background: var(--paper); color: var(--ink); }
+  a { color: var(--petrol); }
+}
+
+body {
+  font-optical-sizing: auto;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- shared column ---- */
+
+/* Quarto lays the page out as a grid; the footer is a sibling of <main>, so
+   it needs to span the full grid and then centre itself on the same column. */
+/* Quarto lays the page out as a grid and the footer is a sibling of <main>,
+   so it has to span the grid and then centre its text on the same column. */
+main.content,
+.site-footer > p {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+div.quarto-container > .site-footer {
+  grid-column: 1 / -1 !important;
+  width: 100%;
+}
+
+#quarto-content { padding: 0 1.4rem; }
+#title-block-header { display: none; }
+
+/* ---- masthead ---- */
+
+.masthead { padding: 4.5rem 0 2.4rem; }
+
+.masthead-name {
+  display: block;
+  font-size: 2.45rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+  color: var(--ink);
+  text-decoration: none;
+}
+.masthead-name:hover { color: var(--ink); }
+
+.masthead-role {
+  margin: 0.45rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* the mark: two Lorenz trajectories, one nudged onto the other */
+
+.trace {
+  margin: 1.6rem 0 0;
+  height: 62px;
+}
+.trace svg {
+  display: block;
+  width: 100%;
+  height: 62px;
+  overflow: visible;
+}
+.trace path {
+  fill: none;
+  stroke-width: 1.15;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.trace-true { stroke: var(--madder); opacity: 0.8; }
+.trace-nudged { stroke: var(--petrol); opacity: 0.85; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .trace-nudged {
+    stroke-dasharray: 3400;
+    stroke-dashoffset: 3400;
+    animation: draw 2.2s cubic-bezier(0.25, 0.9, 0.35, 1) 0.25s forwards;
+  }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+}
+
+/* ---- navigation ---- */
+
+.masthead-nav {
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+.masthead-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 1.3rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.masthead-nav a:hover,
+.masthead-nav a:focus-visible {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+/* ---- body copy ---- */
+
+#quarto-content { padding-bottom: 1rem; }
+
+main p { margin: 0 0 1.1rem; }
+main > section:first-of-type > h2:first-child,
+main > h2:first-of-type { margin-top: 2.6rem; }
+
+h2 {
+  font-size: 1.16rem;
+  font-weight: 500;
+  margin: 2.6rem 0 0.85rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.7rem 0 0.4rem;
+}
+
+a { text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+main ul { padding-left: 1.1rem; }
+main li { margin-bottom: 0.4rem; }
+
+/* citation-style entries for papers and talks */
+
+.entry {
+  margin: 0 0 1.5rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--rule);
+}
+.entry .entry-title { display: block; }
+.entry .entry-meta {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+/* ---- footer ---- */
+
+.site-footer {
+  box-sizing: border-box;
+  margin-top: 3.5rem;
+  padding: 0 1.4rem 3.5rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.site-footer > p {
+  margin: 0 auto;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule);
+}
+.site-footer a { color: var(--muted); }
+
+/* ---- small screens ---- */
+
+@media (max-width: 34rem) {
+  .masthead { padding-top: 3rem; }
+  .masthead-name { font-size: 2rem; }
+  .trace, .trace svg { height: 46px; }
+  .masthead-nav a { margin-right: 1rem; }
+}
+
+*:focus-visible { outline: 2px solid var(--petrol); outline-offset: 3px; }

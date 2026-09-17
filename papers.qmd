@@ -1,0 +1,25 @@
+---
+title: "Papers"
+pagetitle: "Papers — Jacob Murri"
+---
+
+## Preprints and publications
+
+::: {.entry}
+[Relaxation-based schemes for on-the-fly parameter estimation in dissipative dynamical systems](https://arxiv.org/abs/2408.14296){.entry-title}
+[Vincent R. Martinez, Jacob Murri, Jared P. Whitehead. arXiv:2408.14296, 2024.]{.entry-meta}
+:::
+
+## Theses
+
+::: {.entry}
+[Data Assimilation and Parameter Recovery for Rayleigh–Bénard Convection](https://scholarsarchive.byu.edu/etd/9714){.entry-title}
+[Master's thesis, Brigham Young University, 2022. Advised by Jared P. Whitehead.]{.entry-meta}
+:::
+
+<!--
+  Add an entry by copying one of the blocks above. The ::: fences are Quarto
+  divs; `.entry-title` and `.entry-meta` are styled in custom.scss.
+
+  Consider adding a "Talks" section here too, in the same format.
+-->

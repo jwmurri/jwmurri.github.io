@@ -1,0 +1,27 @@
+---
+title: "About"
+pagetitle: "Jacob Murri"
+---
+
+I am a PhD student in applied mathematics at UCLA. I work on inverse problems for
+chaotic and turbulent systems: given partial, noisy observations of a system
+evolving in time, what can be recovered about its state and about the parameters
+governing it?
+
+Most of my work so far has been on *nudging* algorithms, which couple a model to
+incoming data through a feedback term and drive the model toward the true state
+as observations arrive. These methods are appealing because they run on the fly,
+cost about as much as the forward simulation, and, in a number of settings, come
+with provable convergence guarantees.
+
+More broadly, I am interested in PDEs and dynamical systems, mathematical
+modeling, scientific computing, and data-driven methods.
+
+Before UCLA, I completed a BS and MS in mathematics at Brigham Young University.
+As an undergraduate I worked on the $N$-body problem, stochastic switched
+systems, and gerrymandering. My master's thesis, advised by
+[Jared Whitehead](https://math.byu.edu/~whitehead/), was on data assimilation and
+parameter recovery for Rayleigh–Bénard convection.
+
+You can reach me at [jwmurri@math.ucla.edu](mailto:jwmurri@math.ucla.edu), or
+read my [CV](/cv.pdf).

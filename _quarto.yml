@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - CNAME
+    - cv.pdf
+
+website:
+  title: "Jacob Murri"
+  site-url: "https://jwmurri.com"
+  description: "Jacob Murri, PhD student in applied mathematics at UCLA. Data assimilation, inverse problems, and dynamical systems."
+  favicon: favicon.svg
+  open-graph: true
+  page-navigation: false
+  search: false
+
+format:
+  html:
+    theme: [custom.scss]
+    toc: false
+    anchor-sections: false
+    include-in-header: _head.html
+    include-before-body: _masthead.html
+    include-after-body: _footer.html
+
+execute:
+  freeze: auto

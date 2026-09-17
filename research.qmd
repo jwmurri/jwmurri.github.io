@@ -1,0 +1,38 @@
+---
+title: "Research"
+pagetitle: "Research — Jacob Murri"
+---
+
+## Data assimilation and parameter recovery
+
+Continuous data assimilation adds a feedback, or *nudging*, term to a model so
+that it relaxes toward observations as they arrive. For a dissipative system
+
+$$\frac{du}{dt} = G(u),$$
+
+the assimilating system takes the form
+
+$$\frac{d\tilde{u}}{dt} = G(\tilde{u}) - \mu I_h(\tilde{u} - u),$$
+
+where $I_h$ projects onto the observed part of the state and $\mu$ sets the
+relaxation rate. When enough length scales are observed and $\mu$ is chosen well,
+$\tilde{u}$ converges to $u$ — including in the components never observed
+directly.
+
+The same feedback structure can be turned on the model's *parameters*, giving
+algorithms that recover unknown coefficients on the fly, without ensembles or
+repeated forward solves.
+
+<!-- Replace this with a short paragraph on what you are working on now. -->
+
+## Earlier work
+
+As an undergraduate I worked on the $N$-body problem, stochastic switched
+systems, and mathematical approaches to detecting gerrymandering.
+
+<!--
+  A few ways to extend this page:
+  - add a figure (put images in an `images/` folder, then: ![](images/name.png))
+  - add a section per project, each with a paragraph and a link to the paper
+  - link to code on GitHub
+-->
