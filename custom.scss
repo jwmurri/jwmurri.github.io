@@ -178,6 +178,18 @@ main li { margin-bottom: 0.4rem; }
   margin-top: 0.15rem;
 }
 
+/* ---- portrait on the About page ---- */
+
+.portrait {
+  float: right;
+  width: 9.5rem;
+  height: auto;
+  margin: 0.3rem 0 0.8rem 1.7rem;
+  border-radius: 3px;
+}
+/* Quarto wraps the image in a <p>; don't let that add a gap above the text. */
+main p:has(> .portrait) { margin: 0; }
+
 /* ---- footer ---- */
 
 .site-footer {
@@ -203,6 +215,7 @@ main li { margin-bottom: 0.4rem; }
   .masthead-name { font-size: 2rem; }
   .trace, .trace svg { height: 46px; }
   .masthead-nav a { margin-right: 1rem; }
+  .portrait { float: none; display: block; width: 8rem; margin: 0 0 1.4rem; }
 }
 
 *:focus-visible { outline: 2px solid var(--petrol); outline-offset: 3px; }

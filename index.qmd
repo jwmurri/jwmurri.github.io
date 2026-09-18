@@ -3,6 +3,8 @@ title: "About"
 pagetitle: "Jacob Murri"
 ---
 
+<img class="portrait" src="/portrait.jpg" alt="Jacob Murri" width="518" height="720">
+
 I am a PhD student in applied mathematics at UCLA. I work on inverse problems for
 chaotic and turbulent systems: given partial, noisy observations of a system
 evolving in time, what can be recovered about its state and about the parameters
