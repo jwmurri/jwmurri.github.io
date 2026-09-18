@@ -7,7 +7,7 @@ project:
 
 website:
   title: "Jacob Murri"
-  site-url: "https://jwmurri.com"
+  site-url: "https://www.jwmurri.com"
   description: "Jacob Murri, PhD student in applied mathematics at UCLA. Data assimilation, inverse problems, and dynamical systems."
   favicon: favicon.svg
   open-graph: true
