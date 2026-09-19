@@ -177,6 +177,16 @@ main li { margin-bottom: 0.4rem; }
   color: var(--muted);
   margin-top: 0.15rem;
 }
+.entry p:has(+ ul) { margin-bottom: 0.5rem; }
+
+/* term label after a course or mentee, e.g. "Fall 2026" */
+.term {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  margin-left: 0.35rem;
+}
 
 /* ---- portrait on the About page ---- */
 

@@ -3,18 +3,64 @@ title: "Teaching"
 pagetitle: "Teaching — Jacob Murri"
 ---
 
+I received the 2026
+[Liggett Teaching Award](https://ww3.math.ucla.edu/liggett-teaching-awards-established-in-honor-of-professor-emeritus-thomas-m-liggett/)
+from the UCLA Department of Mathematics.
+
+## University of California, Los Angeles
+
+::: {.entry}
+[Instructor]{.entry-title}
+[Instructor of record: prepared and delivered lectures, wrote and graded assessments, and submitted final grades.]{.entry-meta}
+
+- Math 118: Mathematical Methods for Data [Winter 2026]{.term}
+:::
+
+::: {.entry}
+[Teaching assistant]{.entry-title}
+[Led discussion sections, held office hours, and graded assignments and examinations.]{.entry-meta}
+
+- Math 131A: Analysis [Fall 2026]{.term}
+- Math 168: Introduction to Networks [Fall 2026]{.term}
+- Math 495: Teaching College Mathematics [Fall 2025]{.term}
+- Math 32B: Calculus of Several Variables [Spring 2025]{.term}
+- Math 33B: Ordinary Differential Equations [Spring 2025]{.term}
+- Math 142: Mathematical Modeling [Winter 2025]{.term}
+- Math 32AH: Honors Calculus of Several Variables [Fall 2024]{.term}
+- Math 266A: Applied Ordinary Differential Equations [Fall 2024]{.term}
+- Math 131B: Analysis [Spring 2024]{.term}
+- Math 118: Mathematical Methods for Data [Winter 2024]{.term}
+- Math 146: Calculus of Variations and Optimal Control [Winter 2024]{.term}
+- Math 156: Machine Learning [Fall 2023]{.term}
+- Math 266A: Applied Ordinary Differential Equations [Fall 2023]{.term}
+- Math 131A: Analysis [Spring 2023]{.term}
+- Math 151A: Applied Numerical Methods [Winter 2023]{.term}
+- Math 134: Linear and Nonlinear Systems of Differential Equations [Fall 2022]{.term}
+:::
+
+::: {.entry}
+[Directed Reading Program mentor]{.entry-title}
+[A quarter-long [mentorship program](https://sites.google.com/g.ucla.edu/uclamathdrp/) organized by the Department of Mathematics, pairing undergraduates with graduate students for weekly reading meetings and a final presentation.]{.entry-meta}
+
+- Lilly Ehrhard, *Asymptotic Analysis for Boundary Layer Problems* [Fall 2025]{.term}
+:::
+
+::: {.entry}
+[Research mentor, Computational and Applied Mathematics REU]{.entry-title}
+[Mentored six undergraduates who prototyped image-processing and simulation tools for a nonlocal model of bacterial colony growth. Summer 2023.]{.entry-meta}
+:::
+
+## Brigham Young University
+
+::: {.entry}
+[Instructor]{.entry-title}
+[Instructor of record: prepared and delivered lectures.]{.entry-meta}
+
+- Math 118: Essentials of Calculus [Spring 2022]{.term}
+:::
+
 <!--
-  Fill this in with the courses you have taught or assisted. Suggested format:
-
-  ## UCLA
-
-  ::: {.entry}
-  [Math 33B — Differential Equations]{.entry-title}
-  [Teaching assistant, Spring 2026]{.entry-meta}
-  :::
-
-  If you would rather not have this page at all, delete teaching.qmd and remove
-  the Teaching link from _masthead.html.
+  Each ::: block is one role; the list underneath it is the courses or
+  mentees, newest first. `.term` is the small grey term label, styled in
+  custom.scss alongside `.entry-title` and `.entry-meta`.
 -->
-
-Courses and teaching experience will be listed here.
