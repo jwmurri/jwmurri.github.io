@@ -38,12 +38,6 @@ from the UCLA Department of Mathematics.
 - Math 134: Linear and Nonlinear Systems of Differential Equations [Fall 2022]{.term}
 :::
 
-::: {.entry}
-[Directed Reading Program mentor]{.entry-title}
-[A quarter-long [mentorship program](https://sites.google.com/g.ucla.edu/uclamathdrp/) organized by the Department of Mathematics, pairing undergraduates with graduate students for weekly reading meetings and a final presentation.]{.entry-meta}
-
-- Lilly Ehrhard, *Asymptotic Analysis for Boundary Layer Problems* [Fall 2025]{.term}
-:::
 
 ::: {.entry}
 [Research mentor, Computational and Applied Mathematics REU]{.entry-title}
