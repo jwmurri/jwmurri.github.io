@@ -13,6 +13,13 @@ unknown parameters, and reduced-order models to bring down the cost. The three
 projects below apply these ideas to convection, to incompressible flow past
 obstacles, and to a nonlocal model of bacterial growth.
 
+<nav class="section-nav" aria-label="On this page">
+  <a href="#data-assimilation-for-convection">Convection</a>
+  <a href="#reduced-order-models-for-flow-around-obstacles">Reduced-order models</a>
+  <a href="#learning-interaction-kernels-for-bacterial-colonies">Bacterial colonies</a>
+  <a href="#undergraduate-research">Undergraduate research</a>
+</nav>
+
 ## Data assimilation for convection
 
 Many problems in science and engineering call for reconstructing the full state
@@ -69,6 +76,10 @@ relaxation Newton iteration, the other as a relaxation least-squares scheme —
 and gave structural conditions under which they converge. On two-dimensional
 Rayleigh–Bénard convection, both recover the Rayleigh and Prandtl numbers
 together with the full state from low-mode observations.
+
+[Talks: [APS Division of Fluid Dynamics, 2025](/talks/dfd-2025-convection.pdf) ·
+[Thesis defense, 2022](/talks/thesis-defense-2022.pdf) ·
+[BYU Student Research Conference, 2022](/talks/src-2022-convection.pdf) (best presentation in session)]{.project-meta}
 
 ## Reduced-order models for flow around obstacles
 
@@ -137,13 +148,75 @@ The trained models track experimental colony boundaries with average relative
 losses of 9–17% on the two-colony datasets and reproduce the stationary
 fronts phenomenon. A manuscript is in preparation.
 
-## Earlier work
+## Undergraduate research
 
-As an undergraduate at BYU I worked on the $N$-body problem, on stability
-criteria for dynamical systems with stochastic switching and time delays, and
-on Markov chain Monte Carlo methods for quantifying gerrymandering in Utah
-redistricting plans. The latter two led to journal publications; see
-[Papers](/papers.html).
+As an undergraduate at Brigham Young University I worked on three projects,
+two of which led to journal publications.
+
+### Stability of stochastic switched systems
+
+[With Benjamin Webb, Camille Carter, and David Reber · 2020–2021]{.project-meta}
+
+In a switched system the rule governing the dynamics changes over time, and
+the switching itself can be a source of instability. We gave a simple
+sufficient criterion for a system with i.i.d. stochastic switching to be
+stable in expectation, extending earlier results for linear switched systems
+to the nonlinear case. We also introduced *patient stability* — stability
+that survives the introduction of time delays, which are intrinsic to any
+real system — and gave a criterion for it in the stochastically switched
+setting. Both criteria sidestep the Lyapunov, linear-matrix-inequality, and
+semidefinite-programming machinery usually needed for such results.
+
+![A stable system (left) is destabilized by constant time delays (center) and by stochastically varying delays (right). Patient stability rules this out.](images/switched-delays.png){fig-alt="Three time-series panels: decaying trajectories on the left, sustained oscillations in the center, and irregular oscillations on the right."}
+
+[[Paper in *Nonlinearity*](https://doi.org/10.1088/1361-6544/ac9505) ·
+[Talk at the BYU Student Research Conference, 2021](/talks/src-2021-switched-systems.pdf)
+(best undergraduate presentation in session)]{.project-meta}
+
+### Gerrymandering in Utah
+
+[With Tyler J. Jarvis, Annika King, Jake Callahan, and Adrienne Russell · 2019–2021]{.project-meta}
+
+We investigated whether Utah's 2011 congressional map is a partisan
+gerrymander by generating large ensembles of alternative districting plans
+with Markov chain Monte Carlo sampling, then using the ensembles to evaluate
+the standard measures of partisan fairness in a state with at most one
+competitive district. In that setting most of the usual metrics are
+uninformative, so we proposed a new one — the Republican vote share in the
+least-Republican district — which turns out to be very effective for
+quantifying gerrymandering there. I built the sampling pipeline and obtained,
+processed, and cleaned the geographic and election data.
+
+![Republican vote share by district across an ensemble of one million alternative Utah plans, with the enacted 2011 plan in red and its percentile in each district. The least-Republican district is the one that matters.](images/gerrymandering-ensemble.png){fig-alt="Violin plot of Republican vote share for four sorted congressional districts across one million sampled plans, with the enacted plan marked in red at the 99th, 26th, 23rd, and 1st percentiles." width="82%"}
+
+[[Paper in *Statistics and Public Policy*](https://doi.org/10.1080/2330443X.2022.2105770) ·
+[Code](https://github.com/jwmurri/MathematicalElectionAnalysis) ·
+Talks at the BYU Student Research Conference,
+[2020](/talks/src-2020-gerrymandering.pdf) and
+[2021](/talks/src-2021-gerrymandering.pdf) (best undergraduate presentation
+in session, both years)]{.project-meta}
+
+### Celestial mechanics
+
+[With Lennard Bakker · 2017 and 2019–2021]{.project-meta}
+
+I first used numerical experiments in Mathematica to construct
+*exchange orbits* in symmetric $N$-body problems — periodic solutions in
+which two bodies swap orbital characteristics, as Saturn's moons Janus and
+Epimetheus do — by layering Kepler orbits with the right symmetry. Returning
+to the project later, I studied a simplified four-body problem in which two
+small bodies move in the gravitational field of two primaries on Kepler
+orbits — a model for a binary asteroid pair that sits between the restricted
+three-body problem and the full four-body problem. I proved existence and
+uniqueness of collinear equilibrium orbits in each of the possible orderings
+of the bodies, and examined their stability through the spectrum of the
+linearized Hamiltonian system.
+
+![Left: an exchange orbit, in which two pairs of bodies trade places on overlapping near-circular orbits. Right: a collinear equilibrium orbit in the simplified four-body problem, in rotating coordinates.](images/four-body-orbits.png){fig-alt="Left: four colored orbital traces forming two overlapping circles. Right: four circular arcs about the origin, one per body, at different radii."}
+
+[Talks at the BYU Student Research Conference,
+2017 and [2020](/talks/src-2020-four-body.pdf) (best undergraduate
+presentation in session, both years)]{.project-meta}
 
 <!--
   Figures live in images/. Each is a Quarto figure: the bracketed text is the

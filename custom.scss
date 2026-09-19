@@ -137,6 +137,29 @@ div.quarto-container > .site-footer {
   border-bottom-color: var(--ink);
 }
 
+/* in-page section links at the top of long pages */
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+section[id] { scroll-margin-top: 1.5rem; }
+
+.section-nav {
+  margin: 0.4rem 0 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 2;
+}
+.section-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 0.95rem;
+  white-space: nowrap;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--rule);
+}
+.section-nav a:hover,
+.section-nav a:focus-visible { color: var(--ink); border-bottom-color: var(--ink); }
+
 /* ---- body copy ---- */
 
 #quarto-content { padding-bottom: 1rem; }
@@ -179,6 +202,17 @@ main li { margin-bottom: 0.4rem; }
   margin-top: 0.15rem;
 }
 .entry p:has(+ ul) { margin-bottom: 0.5rem; }
+
+/* collaborators, dates, and links under a project heading */
+.project-meta {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+main p:has(> .project-meta:only-child) { margin-bottom: 0.7rem; }
+h3 + p:has(> .project-meta:only-child) { margin-top: -0.2rem; }
 
 /* term label after a course or mentee, e.g. "Fall 2026" */
 .term {
@@ -238,6 +272,12 @@ main p:has(> .portrait) { margin: 0; }
   border-top: 1px solid var(--rule);
 }
 .site-footer a { color: var(--muted); }
+.site-footer .colophon {
+  margin-top: 0.9rem;
+  padding-top: 0;
+  border-top: 0;
+  font-size: 0.72rem;
+}
 
 /* ---- small screens ---- */
 

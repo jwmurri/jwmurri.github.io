@@ -4,6 +4,7 @@ project:
   resources:
     - CNAME
     - cv.pdf
+    - talks/
 
 website:
   title: "Jacob Murri"
