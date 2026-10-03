@@ -26,4 +26,4 @@ systems, and gerrymandering. My master's thesis, advised by
 parameter recovery for Rayleigh–Bénard convection.
 
 You can reach me at [jwmurri@math.ucla.edu](mailto:jwmurri@math.ucla.edu), or
-read my [CV](/cv.pdf).
+read my [CV](/cv.pdf) or [resume](/resume.pdf).
